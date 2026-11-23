@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aroma Serrano | Nossos Produtos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <nav class="navbar" aria-label="Menu principal">
+      <a href="index.html" class="logo">☕ Aroma Serrano</a>
+
+      <button type="button" class="menu-toggle" aria-label="Abrir ou fechar menu" aria-expanded="false">
+        &#9776;
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="produtos.html" class="nav-link ativo">Produtos</a></li>
+        <li><a href="contato.html" class="nav-link">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produtos-secao">
+      <div class="container">
+        <h1>Nossos produtos</h1>
+
+        <!-- Filtro por categoria -->
+        <div class="filtro-categorias" role="group" aria-label="Filtrar produtos por categoria">
+          <button type="button" class="filtro-btn ativo" data-categoria="Todos">Todos</button>
+          <button type="button" class="filtro-btn" data-categoria="Grãos">Grãos</button>
+          <button type="button" class="filtro-btn" data-categoria="Moídos">Moídos</button>
+          <button type="button" class="filtro-btn" data-categoria="Acessórios">Acessórios</button>
+        </div>
+
+        <div class="produtos-grid">
+          <article class="produto-card" data-categoria="Grãos">
+            <div class="produto-thumb" aria-hidden="true">🫘</div>
+            <span class="produto-tag">Grãos</span>
+            <h2>Reserva da Serra (250g)</h2>
+            <p>Grãos inteiros de torra média com notas de chocolate ao leite, avelã e finalização limpa.</p>
+            <p class="produto-preco">R$ 38,00</p>
+          </article>
+
+          <article class="produto-card" data-categoria="Grãos">
+            <div class="produto-thumb" aria-hidden="true">🌄</div>
+            <span class="produto-tag">Grãos</span>
+            <h2>Pico do Nevoeiro (500g)</h2>
+            <p>Grãos de altitude com acidez cítrica equilibrada, aroma floral e corpo aveludado.</p>
+            <p class="produto-preco">R$ 69,00</p>
+          </article>
+
+          <article class="produto-card" data-categoria="Moídos">
+            <div class="produto-thumb" aria-hidden="true">🥄</div>
+            <span class="produto-tag">Moídos</span>
+            <h2>Clássico da Manhã (250g)</h2>
+            <p>Moagem média ideal para coadores de pano ou papel, com doçura de rapadura e toque achocolatado.</p>
+            <p class="produto-preco">R$ 34,00</p>
+          </article>
+
+          <article class="produto-card" data-categoria="Moídos">
+            <div class="produto-thumb" aria-hidden="true">🫖</div>
+            <span class="produto-tag">Moídos</span>
+            <h2>Doçura do Vale (250g)</h2>
+            <p>Torra média-clara moída na medida certa, destacando notas de caramelo e frutas amarelas.</p>
+            <p class="produto-preco">R$ 36,50</p>
+          </article>
+
+          <article class="produto-card" data-categoria="Acessórios">
+            <div class="produto-thumb" aria-hidden="true">🫗</div>
+            <span class="produto-tag">Acessórios</span>
+            <h2>Chaleira Bico de Ganso Inox</h2>
+            <p>Permite despejo controlado e preciso da água quente para extração uniforme no método coado.</p>
+            <p class="produto-preco">R$ 149,00</p>
+          </article>
+
+          <article class="produto-card" data-categoria="Acessórios">
+            <div class="produto-thumb" aria-hidden="true">⚖️</div>
+            <span class="produto-tag">Acessórios</span>
+            <h2>Balança Digital com Timer</h2>
+            <p>Precisão em gramas e cronômetro integrado para repetir receitas de café com consistência.</p>
+            <p class="produto-preco">R$ 95,00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div class="rodape-bloco">
+        <strong>Café Aroma Serrano</strong>
+        <p>Torrefação artesanal de cafés especiais.</p>
+      </div>
+      <div class="rodape-bloco">
+        <p><strong>Telefone:</strong> (24) 99876-5432</p>
+        <p><strong>E-mail:</strong> contato@aromaserrano.com.br</p>
+      </div>
+      <div class="rodape-bloco">
+        <p><strong>Redes sociais:</strong> Instagram • Facebook • WhatsApp</p>
+        <p class="copyright">&copy; <span id="ano-atual">2026</span> Café Aroma Serrano. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
